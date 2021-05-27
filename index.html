@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro de Clientes</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet"> 
+	<script src="js/app.js"></script>	
+</head>
+<body>
+
+	<header>
+		<h1>Cadastro de Clientes</h1>
+	</header>
+
+	<main>
+		<div class="card">
+		
+			<div class="inputDados">
+				<span>Nome</span>
+				<input type="text" id="nome">
+			</div>
+
+			<div class="inputDados">
+				<span>Sobrenome</span>
+				<input type="text" id="sobrenome">
+			</div>
+
+			<div class="inputDados">
+				<span>Email</span>
+				<input type="text" id="email">
+			</div>
+
+			<button onclick="pessoa.salvar()">Salvar</button>
+			<button onclick="pessoa.cancelar()">Cancelar</button>
+
+		</div>
+		<div>
+			<table border="1">
+				<thead>
+					<td class="center">ID</td>
+					<td>Nome</td>
+					<td>Sobrenome</td>
+					<td>Email</td>
+					<td class="center">Ação</td>
+				</thead>
+				<tbody id="tbody">
+					
+				</tbody>
+			</table>
+		</div>
+	</main>
+</body>
+</html>
